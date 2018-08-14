@@ -30,7 +30,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
     }
     
     @objc func makePipes() {
-        //管子邏輯
+        // 管子邏輯
         let movePipes = SKAction.move(by: CGVector(dx: -2 * self.frame.width, dy: 0), duration: TimeInterval(self.frame.width / 100))
         let removePipes = SKAction.removeFromParent()
         let moveAndRemovePipes = SKAction.sequence([movePipes, removePipes])
